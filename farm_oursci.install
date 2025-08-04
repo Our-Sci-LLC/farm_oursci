@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * farmOS OurSci install functions.
+ */
+
+use Drupal\consumers\Entity\Consumer;
+
+/**
+ * Implements hook_install().
+ */
+function farm_oursci_install() {
+
+  // Create a JSON:API CRUD consumer.
+  $consumer = Consumer::create([
+    'label' => 'OurSci Consumer',
+    'client_id' => 'oursci_crud',
+    'grant_types' => [
+      'client_credentials',
+    ],
+    'scopes' => ['json_api_crud'],
+    'access_token_expiration' => 3600,
+    'secret' => NULL,
+    'confidential' => TRUE,
+    'third_party' => FALSE,
+  ]);
+  $consumer->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function farm_oursci_uninstall() {
+
+  // Delete the JSON:API CRUD consumer.
+  $consumers = \Drupal::entityTypeManager()->getStorage('consumer')
+    ->loadByProperties(['client_id' => 'oursci_crud']);
+  if (!empty($consumers)) {
+    $consumer = reset($consumers);
+    $consumer->delete();
+  }
+}

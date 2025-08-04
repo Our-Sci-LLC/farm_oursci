@@ -1,0 +1,9 @@
+name: 'Farm OurSci'
+type: module
+description: 'farmOS customizations for OurSci.'
+package: OurSci
+core_version_requirement: ^10
+dependencies:
+  - farm_farm
+  - drupal:consumers
+  - drupal:simple_oauth

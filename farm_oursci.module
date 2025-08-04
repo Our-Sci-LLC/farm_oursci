@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains farmOS customizations for OurSci.
+ */
+
+/**
+ * Implements hook_farm_api_allow_resource_types().
+ */
+function farm_pasa_farm_api_allow_resource_types() {
+  // Enable JSON:API endpoints for organizations.
+  return ['organization'];
+}

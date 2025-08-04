@@ -1,0 +1,14 @@
+json_api_crud:
+  description: 'Grants access to the JSON:API CRUD role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'jsonapi_crud'
+  parent: ''

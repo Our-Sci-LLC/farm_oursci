@@ -1,0 +1,5 @@
+{
+	"name": "drupal/farm_oursci",
+	"description": "Makes Views-generated table columns resizable.",
+	"type": "drupal-module"
+}
