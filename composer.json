@@ -1,5 +1,15 @@
 {
-	"name": "drupal/farm_oursci",
-	"description": "Makes Views-generated table columns resizable.",
-	"type": "drupal-module"
+    "name": "oursci/farm_oursci",
+    "description": "Makes Views-generated table columns resizable.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^10 || ^11"
+    },
+    "extra": {
+        "drupal": {
+            "package": "Our-Sci",
+            "version": "1.0.0"
+        }
+    }
 }
