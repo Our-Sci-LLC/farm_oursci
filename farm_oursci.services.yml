@@ -1,0 +1,6 @@
+services:
+  farm_oursci.token_expiry_decorator:
+    class: Drupal\farm_oursci\OursciTokenExpiryDecorator
+    decorates: Drupal\simple_oauth\TokenExpiryTriggerHandlerInterface
+    arguments: ['@farm_oursci.token_expiry_decorator.inner']
+    public: false
