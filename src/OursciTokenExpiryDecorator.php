@@ -28,6 +28,8 @@ class OursciTokenExpiryDecorator extends TokenExpiryTriggerHandler {
    * {@inheritdoc}
    */
   public function handleUserUpdate($user): void {
+    $delete_tokens = FALSE;
+
     /** Only delete oauth tokens if one of the following happened:
      * - password was changed.
      * - account was deactivated.
