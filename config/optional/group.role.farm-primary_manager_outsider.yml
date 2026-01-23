@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.farm
+    - user.role.farm_primary_manager
+id: farm-primary_manager_outsider
+label: 'Primary manager (outsider)'
+weight: 102
+admin: false
+scope: outsider
+global_role: farm_primary_manager
+group_type: farm
+permissions:
+  - 'access group_organization overview'
+  - 'administer members'
+  - 'create group_organization:farm entity'
+  - 'delete any group_organization:farm entity'
+  - 'delete own group_organization:farm entity'
+  - 'update any group_organization:farm entity'
+  - 'update own group_organization:farm entity'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_organization:farm entity'
+  - 'view group_organization:farm relationship'

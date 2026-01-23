@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_role
+third_party_settings:
+  farm_role:
+    access:
+      config: false
+      entity:
+        'view all': true
+        type:
+          asset:
+            create:
+              - all
+            'update any':
+              - all
+            'delete any':
+              - all
+          log:
+            create:
+              - all
+            'update any':
+              - all
+            'delete any':
+              - all
+          quantity:
+            create:
+              - all
+            'update any':
+              - all
+            'delete any':
+              - all
+id: farm_producer
+label: Producer
+weight: 3
+is_admin: null
+permissions: {  }

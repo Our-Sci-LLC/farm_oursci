@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_role
+third_party_settings:
+  farm_role:
+    access:
+      config: true
+      entity:
+        'view all': true
+        'create all': true
+        'update all': true
+        'delete all': true
+id: farm_primary_manager
+label: 'Primary manager'
+weight: 2
+is_admin: null
+permissions: {  }

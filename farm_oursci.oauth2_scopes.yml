@@ -12,3 +12,83 @@ json_api_crud:
   granularity_configuration:
     role: 'jsonapi_crud'
   parent: ''
+
+farm_primary_manager:
+  description: 'Grants access to the Primary Manager role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+    password:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'farm_primary_manager'
+
+farm_tap_admin:
+  description: 'Grants access to the Technical Assistance Provider Admin role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+    password:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'farm_tap_admin'
+
+farm_tap:
+  description: 'Grants access to the Technical Assistance Provider role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+    password:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'farm_tap'
+
+farm_producer:
+  description: 'Grants access to the Producer role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+    password:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'farm_producer'
+
+farm_producer_readonly:
+  description: 'Grants access to the Producer (read-only) role.'
+  umbrella: false
+  grant_types:
+    authorization_code:
+      status: true
+    client_credentials:
+      status: true
+    refresh_token:
+      status: true
+    password:
+      status: true
+  granularity_id: 'role'
+  granularity_configuration:
+    role: 'farm_producer_readonly'

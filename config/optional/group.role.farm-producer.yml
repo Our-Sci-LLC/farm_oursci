@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.farm
+    - user.role.farm_producer
+id: farm-producer
+label: Producer
+weight: 105
+admin: false
+scope: insider
+global_role: farm_producer
+group_type: farm
+permissions:
+  - 'view group_organization:farm entity'
+  - 'view group_organization:farm relationship'

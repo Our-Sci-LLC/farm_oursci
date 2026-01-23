@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.farm
+    - user.role.farm_tap
+id: farm-tap
+label: TAP
+weight: 104
+admin: false
+scope: insider
+global_role: farm_tap
+group_type: farm
+permissions:
+  - 'administer members'
+  - 'view group_membership relationship'
+  - 'view group_organization:farm entity'
+  - 'view group_organization:farm relationship'

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.farm
+    - user.role.farm_tap_admin
+id: farm-tap_admin
+label: TAP Admin
+weight: 104
+admin: false
+scope: insider
+global_role: farm_tap_admin
+group_type: farm
+permissions:
+  - 'administer members'
+  - 'create group_organization:farm entity'
+  - 'delete own group_organization:farm entity'
+  - 'update own group_organization:farm entity'
+  - 'view group_membership relationship'
+  - 'view group_organization:farm entity'
+  - 'view group_organization:farm relationship'

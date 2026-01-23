@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_role
+    - farm_setup
+third_party_settings:
+  farm_role:
+    access:
+      config: false
+      entity:
+        'view all': true
+        'create all': true
+        'update all': true
+        'delete all': true
+id: farm_tap_admin
+label: 'Technical Assistance Provider Admin'
+weight: 4
+is_admin: null
+permissions:
+  - 'access farm setup'
