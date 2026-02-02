@@ -8,7 +8,7 @@ json_api_crud:
       status: true
     refresh_token:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'jsonapi_crud'
   parent: ''
@@ -25,7 +25,7 @@ farm_primary_manager:
       status: true
     password:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'farm_primary_manager'
 
@@ -41,7 +41,7 @@ farm_tap_admin:
       status: true
     password:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'farm_tap_admin'
 
@@ -57,7 +57,7 @@ farm_tap:
       status: true
     password:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'farm_tap'
 
@@ -73,7 +73,7 @@ farm_producer:
       status: true
     password:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'farm_producer'
 
@@ -89,6 +89,6 @@ farm_producer_readonly:
       status: true
     password:
       status: true
-  granularity_id: 'role'
+  granularity_id: 'managed_role'
   granularity_configuration:
     role: 'farm_producer_readonly'
